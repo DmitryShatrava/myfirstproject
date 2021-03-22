@@ -1,16 +1,11 @@
 <html>
 <head>
-<style>
-textarea {
-  resize: none;
-}
-</style>
 </head>
 <body>
 
 
 <h1>This is home page</h1>
-<form>
+<form action="{% url 'reverse' %}">
 <textarea name="usertext" rows="10" cols="50"></textarea>
 <br><br>
 <input type="submit" value="Reverse!">
@@ -19,4 +14,3 @@ textarea {
 </body>
 </html>
 
-{{greeting}}
